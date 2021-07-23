@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 class Logger {
-  _prettify(object) {
+  prettify(object) {
     return JSON.stringify(object, null, 2);
   }
 
@@ -25,15 +26,16 @@ class Logger {
       */
 
       console.log('[console]: error message >>> ', errorObject.message);
-      errorStack && console.log('[console]: stack trace >>> ', errorStack);
+      if (errorStack) console.log('[console]: stack trace >>> ', errorStack);
       return;
     }
 
     if (this._canPrettyPrint(data)) {
-      return console.log('[console]:', this._prettify(data));
+      console.log('[console]:', this._prettify(data));
+      return;
     }
 
-    return console.log('[console]:', data);
+    console.log('[console]:', data);
   }
 }
 
