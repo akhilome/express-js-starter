@@ -4,5 +4,14 @@
   "description": "node-express js starter",
   "main": "server.js",
   "author": "Kizito Akhilome <kizito@akhilo.me>",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0"
+  }
 }
