@@ -6,3 +6,4 @@ nodemon.json
 .eslint*
 .prettier*
 jest.config.*
+.github
