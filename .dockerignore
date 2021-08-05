@@ -2,3 +2,7 @@ node_modules
 .git
 .env
 Dockerfile
+nodemon.json
+.eslint*
+.prettier*
+jest.config.*
